@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi Wisata Gunung Dempo, Pagar Alam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+            border: 1px solid #ddd;
+        }
+        .header {
+            background-image: url(headerWeb.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 15px;
+            min-height: 200px;
+            position: relative;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .header h1, .header p {
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .menu-col {
+            width: 20%;
+            background-color: #e9ecef;
+        }
+        .content-col {
+            width: 80%;
+        }
+        h1, h2 {
+            color: #2c5aa0;
+            text-align: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #2c5aa0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .menu a:hover {
+            background-color: #1e3d72;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            table {
+                height: auto;
+            }
+            .menu-col, .content-col {
+                width: 100%;
+                display: block;
+            }
+            td {
+                padding: 10px;
+            }
+            .header {
+                padding: 40px 10px;
+                min-height: 150px;
+                background-size: cover;
+            }
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Selamat Datang di Gunung Dempo, Pagar Alam!</h1>
+                <p>Destinasi Wisata Alam Terindah di Sumatera Selatan</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="menu-col">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#beranda" onclick="showSection('beranda')">Beranda</a></li>
+                        <li><a href="#deskripsi" onclick="showSection('deskripsi')">Deskripsi</a></li>
+                        <li><a href="#fasilitas" onclick="showSection('fasilitas')">Fasilitas</a></li>
+                        <li><a href="#galeri" onclick="showSection('galeri')">Galeri</a></li>
+                        <li><a href="#kontak" onclick="showSection('kontak')">Kontak</a></li>
+                    </ul>
+                </nav>
+            </td>
+            
+            <td class="content-col">
+                <section id="beranda" class="section active">
+                    <h2>Beranda - Selamat Datang!</h2>
+                    <p>Gunung Dempo adalah gunung berapi tertinggi di Sumatera Selatan, terletak di Kabupaten Pagar Alam. Dengan ketinggian 3.173 mdpl, gunung ini menawarkan petualangan alam yang tak terlupakan.</p>
+                    <img src="DempoPGA.png" alt="Pemandangan Gunung Dempo" style="margin-top: 10px;">
+                </section>
+                
+                <section id="deskripsi" class="section">
+                    <h2>Deskripsi Gunung Dempo</h2>
+                    <p>Gunung Dempo merupakan gunung api yang aktif dan terakhir kali meletuas pada tahun 2009.
+                        Gunung ini juga dikenal sebagai salah satu gunung api yang paling aktif di Sumatra Selatan.</p>
+                    <br>
+                    <p>Gunung Dempo memiliki jalur pendakian yang cukup populer bagi para pendaki yang ingin
+                        menikmati pemandangan indah di sekitar gunung dan mencapai puncaknya. Terdapat beberapa
+                        jalur pendakian yang tersedia, namun jalur yang paling umum adalah melalui kawasan air
+                        terjun Puncak Lawang, dengan rute pendakian yang relatif mudah dan diperkirakan dapat
+                        diselesaikan dalam waktu sekitar 5-7 jam.</p>
+                    <br>
+                    <p>Selain menjadi tujuan wisata pendakian, Gunung Dempo juga dikenal sebagai sumber penghasil kopi
+                        berkualitas tinggi di wilayah Sumatra Selatan. Di sekitar gunung terdapat banyak kebun kopi yang
+                        dapat dikunjungi oleh wisatawan untuk melihat proses produksi kopi secara langsung.</p>
+                </section>
+                
+                <section id="fasilitas" class="section">
+                    <h2>Fasilitas Tersedia</h2>
+                    <ul>
+                        <li>Pos pendakian dan pemandu lokal.</li>
+                        <li>Area camping di kaki gunung.</li>
+                        <li>Homestay di Pagar Alam.</li>
+                        <li>Akses transportasi dari Palembang.</li>
+                    </ul>
+                </section>
+                
+                <section id="galeri" class="section">
+                    <h2>Galeri Foto</h2>
+                    <img src="PemandanganGunungDempo.jpg" alt="Pemandangan Gunung Dempo" style="margin-bottom: 10px; display: block;">
+                    <img src="KawaDempo.jpg" alt="Kawah Gunung Dempo" style="margin-bottom: 10px; display: block;">
+                    <img src="Peta Jalur Gunung Dempo.jpg" alt="Rute Pendakian" style="margin-bottom: 10px; display: block;">
+                </section>
+                
+                <section id="kontak" class="section">
+                    <h2>Hubungi Kami</h2>
+                    <p>Untuk informasi lebih lanjut, hubungi Dinas Pariwisata Pagar Alam:<br>
+                    Email: info@pariwisatapagaralam.go.id<br>
+                    Telepon: (0731) 123456</p>
+
+                    <form action="#" method="post" style="max-width: 400px; margin: 0 auto;">
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" required style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+                        
+                        <label for="pesan">Pesan:</label><br>
+                        <textarea id="pesan" name="pesan" rows="4" required style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+                        
+                        <input type="submit" value="Kirim" style="background-color: #2c5aa0; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                    </form>
+                </section>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" style="background-color: #2c5aa0; color: white; text-align: center; font-size: 12px;">
+                <p>&copy; 2025 Promosi Wisata Gunung Dempo, Pagar Alam. Dibuat dengan HTML, CSS, dan fitur dasar web.</p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            document.querySelector('.content-col').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. (Simulasi)');
+        });
+
+        showSection('beranda');
+    </script>
+
+</body>
+</html>
